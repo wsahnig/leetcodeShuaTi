@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*
  * @lc app=leetcode id=7 lang=java
  *
@@ -56,16 +55,3 @@ class Solution {
         return ans;
     }
 }
-=======
-/*
- * @lc app=leetcode id=7 lang=java
- *
- * [7] Reverse Integer
- */
-class Solution {
-    public int reverse(int x) {
-        
-    }
-}
->>>>>>> a47453625bbbdf482e37c42ed676631540a140d0
-
