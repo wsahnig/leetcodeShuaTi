@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * @lc app=leetcode id=150 lang=java
  *
@@ -32,4 +33,16 @@ class Solution {
        return nums.peek();
     }
 }
+=======
+/*
+ * @lc app=leetcode id=150 lang=java
+ *
+ * [150] Evaluate Reverse Polish Notation
+ */
+class Solution {
+    public int evalRPN(String[] tokens) {
+        
+    }
+}
+>>>>>>> a47453625bbbdf482e37c42ed676631540a140d0
 

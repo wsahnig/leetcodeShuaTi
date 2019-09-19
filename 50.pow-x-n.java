@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * @lc app=leetcode id=50 lang=java
  *
@@ -60,4 +61,16 @@ class Solution {
            return Pow(x , n);
     }
 }
+=======
+/*
+ * @lc app=leetcode id=50 lang=java
+ *
+ * [50] Pow(x, n)
+ */
+class Solution {
+    public double myPow(double x, int n) {
+        
+    }
+}
+>>>>>>> a47453625bbbdf482e37c42ed676631540a140d0
 

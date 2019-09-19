@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.util.Stack;
 
 import javax.swing.tree.TreeNode;
@@ -62,4 +63,25 @@ class Solution {
 }
 
 
+=======
+/*
+ * @lc app=leetcode id=94 lang=java
+ *
+ * [94] Binary Tree Inorder Traversal
+ */
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public List<Integer> inorderTraversal(TreeNode root) {
+        
+    }
+}
+>>>>>>> a47453625bbbdf482e37c42ed676631540a140d0
 

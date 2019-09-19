@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * @lc app=leetcode id=91 lang=java
  *
@@ -25,4 +26,16 @@ class Solution {
         return dp[n];
     }
 }
+=======
+/*
+ * @lc app=leetcode id=91 lang=java
+ *
+ * [91] Decode Ways
+ */
+class Solution {
+    public int numDecodings(String s) {
+        
+    }
+}
+>>>>>>> a47453625bbbdf482e37c42ed676631540a140d0
 

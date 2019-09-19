@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * @lc app=leetcode id=78 lang=java
  *
@@ -20,4 +21,16 @@ class Solution {
         return ans;
     }
 }
+=======
+/*
+ * @lc app=leetcode id=78 lang=java
+ *
+ * [78] Subsets
+ */
+class Solution {
+    public List<List<Integer>> subsets(int[] nums) {
+        
+    }
+}
+>>>>>>> a47453625bbbdf482e37c42ed676631540a140d0
 

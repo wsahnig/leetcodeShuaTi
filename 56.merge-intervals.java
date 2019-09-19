@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.util.Comparator;
 
 /*
@@ -72,4 +73,16 @@ class Solution {
         return ans;
     }
 }
+=======
+/*
+ * @lc app=leetcode id=56 lang=java
+ *
+ * [56] Merge Intervals
+ */
+class Solution {
+    public int[][] merge(int[][] intervals) {
+        
+    }
+}
+>>>>>>> a47453625bbbdf482e37c42ed676631540a140d0
 

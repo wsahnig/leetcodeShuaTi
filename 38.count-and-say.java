@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * @lc app=leetcode id=38 lang=java
  *
@@ -67,4 +68,16 @@ class Solution {
         return curr;
     }
 }
+=======
+/*
+ * @lc app=leetcode id=38 lang=java
+ *
+ * [38] Count and Say
+ */
+class Solution {
+    public String countAndSay(int n) {
+        
+    }
+}
+>>>>>>> a47453625bbbdf482e37c42ed676631540a140d0
 

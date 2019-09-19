@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * @lc app=leetcode id=53 lang=java
  *
@@ -45,4 +46,16 @@ class Solution {
         return maxSum;
     }
 }
+=======
+/*
+ * @lc app=leetcode id=53 lang=java
+ *
+ * [53] Maximum Subarray
+ */
+class Solution {
+    public int maxSubArray(int[] nums) {
+        
+    }
+}
+>>>>>>> a47453625bbbdf482e37c42ed676631540a140d0
 

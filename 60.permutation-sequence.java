@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * @lc app=leetcode id=60 lang=java
  *
@@ -28,4 +29,16 @@ class Solution {
         return list.get(k-1);
     }
 }
+=======
+/*
+ * @lc app=leetcode id=60 lang=java
+ *
+ * [60] Permutation Sequence
+ */
+class Solution {
+    public String getPermutation(int n, int k) {
+        
+    }
+}
+>>>>>>> a47453625bbbdf482e37c42ed676631540a140d0
 

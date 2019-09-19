@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * @lc app=leetcode id=88 lang=java
  *
@@ -50,4 +51,16 @@ class Solution {
 
     }
 }
+=======
+/*
+ * @lc app=leetcode id=88 lang=java
+ *
+ * [88] Merge Sorted Array
+ */
+class Solution {
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+        
+    }
+}
+>>>>>>> a47453625bbbdf482e37c42ed676631540a140d0
 
