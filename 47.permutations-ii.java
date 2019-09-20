@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*
  * @lc app=leetcode id=47 lang=java
  *
@@ -58,16 +57,4 @@ class Solution {
         return ans;
     }
 }
-=======
-/*
- * @lc app=leetcode id=47 lang=java
- *
- * [47] Permutations II
- */
-class Solution {
-    public List<List<Integer>> permuteUnique(int[] nums) {
-        
-    }
-}
->>>>>>> a47453625bbbdf482e37c42ed676631540a140d0
 

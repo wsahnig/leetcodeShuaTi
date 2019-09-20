@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-/*
- * @lc app=leetcode id=213 lang=java
- *
- * [213] House Robber II
- */
-class Solution {
-    public int rob(int[] nums) {
-        
-    }
-}
-
-=======
 /*
  * @lc app=leetcode id=213 lang=java
  *
@@ -35,4 +22,3 @@ class Solution {
     
 }
 
->>>>>>> a47453625bbbdf482e37c42ed676631540a140d0

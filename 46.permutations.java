@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 
 /*
@@ -61,16 +60,4 @@ class Solution {
         return ans;
     }
 }
-=======
-/*
- * @lc app=leetcode id=46 lang=java
- *
- * [46] Permutations
- */
-class Solution {
-    public List<List<Integer>> permute(int[] nums) {
-        
-    }
-}
->>>>>>> a47453625bbbdf482e37c42ed676631540a140d0
 

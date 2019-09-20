@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*
  * @lc app=leetcode id=36 lang=java
  *
@@ -134,16 +133,4 @@ class Solution {
         else return true;
     }
 }
-=======
-/*
- * @lc app=leetcode id=36 lang=java
- *
- * [36] Valid Sudoku
- */
-class Solution {
-    public boolean isValidSudoku(char[][] board) {
-        
-    }
-}
->>>>>>> a47453625bbbdf482e37c42ed676631540a140d0
 

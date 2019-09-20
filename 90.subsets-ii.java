@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*
  * @lc app=leetcode id=90 lang=java
  *
@@ -20,16 +19,4 @@ class Solution {
         return ans;
     }
 }
-=======
-/*
- * @lc app=leetcode id=90 lang=java
- *
- * [90] Subsets II
- */
-class Solution {
-    public List<List<Integer>> subsetsWithDup(int[] nums) {
-        
-    }
-}
->>>>>>> a47453625bbbdf482e37c42ed676631540a140d0
 

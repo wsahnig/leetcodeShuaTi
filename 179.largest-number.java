@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*
  * @lc app=leetcode id=179 lang=java
  *
@@ -28,16 +27,4 @@ class Solution {
         return ans;
     }
 }
-=======
-/*
- * @lc app=leetcode id=179 lang=java
- *
- * [179] Largest Number
- */
-class Solution {
-    public String largestNumber(int[] nums) {
-        
-    }
-}
->>>>>>> a47453625bbbdf482e37c42ed676631540a140d0
 

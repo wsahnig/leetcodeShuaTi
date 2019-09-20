@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*
  * @lc app=leetcode id=215 lang=java
  *
@@ -38,16 +37,4 @@ class Solution {
         return nums[i+1];
     }
 }
-=======
-/*
- * @lc app=leetcode id=215 lang=java
- *
- * [215] Kth Largest Element in an Array
- */
-class Solution {
-    public int findKthLargest(int[] nums, int k) {
-        
-    }
-}
->>>>>>> a47453625bbbdf482e37c42ed676631540a140d0
 

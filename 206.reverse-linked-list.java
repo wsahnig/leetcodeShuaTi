@@ -1,24 +1,3 @@
-<<<<<<< HEAD
-/*
- * @lc app=leetcode id=206 lang=java
- *
- * [206] Reverse Linked List
- */
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
- */
-class Solution {
-    public ListNode reverseList(ListNode head) {
-        
-    }
-}
-
-=======
 /*
  * @lc app=leetcode id=206 lang=java
  *
@@ -49,5 +28,3 @@ class Solution {
         return head;
     }
 }
-
->>>>>>> a47453625bbbdf482e37c42ed676631540a140d0

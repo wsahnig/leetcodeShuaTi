@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*
  * @lc app=leetcode id=49 lang=java
  *
@@ -48,16 +47,4 @@ class Solution {
         return new ArrayList(hm.values());
     }
 }
-=======
-/*
- * @lc app=leetcode id=49 lang=java
- *
- * [49] Group Anagrams
- */
-class Solution {
-    public List<List<String>> groupAnagrams(String[] strs) {
-        
-    }
-}
->>>>>>> a47453625bbbdf482e37c42ed676631540a140d0
 

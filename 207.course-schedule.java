@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*
  * @lc app=leetcode id=207 lang=java
  *
@@ -36,16 +35,4 @@ class Solution {
         return cnt == numCourses;
     }
 }
-=======
-/*
- * @lc app=leetcode id=207 lang=java
- *
- * [207] Course Schedule
- */
-class Solution {
-    public boolean canFinish(int numCourses, int[][] prerequisites) {
-        
-    }
-}
->>>>>>> a47453625bbbdf482e37c42ed676631540a140d0
 
