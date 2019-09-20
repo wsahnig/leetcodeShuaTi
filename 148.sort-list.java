@@ -1,24 +1,3 @@
-<<<<<<< HEAD
-/*
- * @lc app=leetcode id=148 lang=java
- *
- * [148] Sort List
- */
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
- */
-class Solution {
-    public ListNode sortList(ListNode head) {
-        
-    }
-}
-
-=======
 /*
  * @lc app=leetcode id=148 lang=java
  *
@@ -68,4 +47,3 @@ class Solution {
     }
 }
 
->>>>>>> a47453625bbbdf482e37c42ed676631540a140d0
