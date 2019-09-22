@@ -17,14 +17,12 @@ class Solution {
         ListNode q;
         ListNode pre = null;
         if(p == null) return head;
-        while(p.next != null){
+        while(p!= null){
             q = p.next;
             p.next = pre;
             pre = p;
             p = q;
-        }
-        p.next = pre;
-        head = p;
-        return head;
+        } 
+        return pre;
     }
 }

@@ -12,34 +12,70 @@
  * }
  */
 class Solution {
+    
     public ListNode partition(ListNode head, int x) {
         ListNode p = head;
-        ListNode pre1 = null; // gtx's pre
-        ListNode pre2 = null;// p's pre
+        ListNode pre = null;//p's pre
+        ListNode gtxPre = null; // gtx's pre    
         ListNode gtx = null;
         if(p == null) return head;
         while(p!=null){
-            if(p.val >= x && gtx == null){
-               gtx = p;
-               pre1 = pre2;
+            if(p.val >= x){
+               if(gtx == null){
+                    gtx = p;
+                    gtxPre = pre;
+               }
+               pre = p;
+               p = p.next;
             }
             else if(p.val < x){ 
                if(gtx != null){ //need to adjust node's position
-                    pre2.next = p.next;
-                    if(pre1 != null){// gtx is not the head
-                       pre1.next = p;
+                    pre.next = p.next;
+                    if(gtxPre != null){// gtx is not the head
+                        gtxPre.next = p;
                     }
                     else{
                         head = p;
                     }
-                    pre1 = p;
+                    //摘下p，插入到gtx的前面
+                    gtxPre = p;
                     p.next = gtx; 
+               }else{
+                   pre = p;
                }
+               p = pre.next;
             }
-            pre2 = p;
-            if(p != null)
+        }
+        return head;
+    }
+    public ListNode partition2(ListNode head, int x) {
+        ListNode p = head;
+        if(p == null) return head;
+        ListNode lastMin = null;
+        ListNode lastMax = null;ListNode firstMax = null;
+        while(p!=null){
+            if(p.val < x){
+                 if(lastMin == null){
+                     head = p;                     
+                 }else{
+                     lastMin.next = p;
+                 }
+                 lastMin = p;
+            }
+            else{
+                 if(lastMax == null){
+                     firstMax = p;
+                 }else{
+                     lastMax.next = p;
+                 }
+                 lastMax = p;
+            }
             p = p.next;
         }
+        if(lastMin != null)
+        lastMin.next = firstMax;
+        if(lastMax != null)
+        lastMax.next = null;
         return head;
     }   
 }
