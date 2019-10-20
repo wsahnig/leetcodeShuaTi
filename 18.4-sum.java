@@ -35,7 +35,32 @@
  */
 class Solution {
     public List<List<Integer>> fourSum(int[] nums, int target) {
-        
+        Arrays.sort(nums);
+        List<List<Integer>> ans = new ArrayList();
+        for(int i=0;i<nums.length-3;i++){
+            if(i == 0 || i>0 && nums[i] != nums[i-1]){
+               for(int j=i+1;j<nums.length-2;j++){
+                  if(j == i+1 || j > i+1 && nums[j] != nums[j-1]){
+                      long sum = target-(nums[i] + nums[j]);
+                      int lo = j+1 , hi = nums.length-1;
+                      while(lo < hi){
+                          long sum2 = nums[lo] + nums[hi];
+                          if(sum == sum2){
+                            ans.add(Arrays.asList(nums[i],nums[j],nums[lo],nums[hi]));
+                            lo++;
+                            hi--;
+                            while(lo < hi && nums[lo] == nums[lo-1]) lo++;
+                            while(lo < hi && nums[hi] == nums[hi+1]) hi--;
+                          }
+                          else if(sum < sum2) hi--;
+                          else lo++;
+                      }
+                  }
+               }
+            }
+
+        }
+        return ans;
     }
 }
 
