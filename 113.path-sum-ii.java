@@ -50,32 +50,57 @@
  * }
  */
 class Solution {
-    public List<List<Integer>> ans = new ArrayList<List<Integer>>();
+    // public List<List<Integer>> ans = new ArrayList<List<Integer>>();
  
-    public void pathSum(TreeNode root, int sum,List<Integer> list){
+    // public void pathSum(TreeNode root, int sum,List<Integer> list){
 
+    //     list.add(root.val);
+    //     if(root.left == null && root.right == null && root.val == sum){
+    //           ans.add(list);
+    //     }        
+    //     if(root.left != null){
+    //         List<Integer> l = new ArrayList<Integer>();
+    //         l.addAll(list);
+    //         pathSum(root.left,sum - root.val,l);
+    //     }
+    //     if(root.right != null){
+    //         List<Integer> r = new ArrayList<Integer>();
+    //         r.addAll(list);
+    //         pathSum(root.right,sum - root.val,r);
+    //     }
+    // }
+    public void FindPath(TreeNode root,int curr,int target,List<Integer> list,List<List<Integer>> ans){
+        if(root == null) return;
+        curr += root.val;
+        if(root.left == null && root.right == null){
+            if(curr == target){
+                 list.add(root.val);
+                 ans.add(new ArrayList(list));
+                 list.remove(list.size()-1);
+            }
+            return;
+        }
         list.add(root.val);
-        if(root.left == null && root.right == null && root.val == sum){
-              ans.add(list);
-        }        
-        if(root.left != null){
-            List<Integer> l = new ArrayList<Integer>();
-            l.addAll(list);
-            pathSum(root.left,sum - root.val,l);
-        }
-        if(root.right != null){
-            List<Integer> r = new ArrayList<Integer>();
-            r.addAll(list);
-            pathSum(root.right,sum - root.val,r);
-        }
+        FindPath(root.left,curr,target,list,ans);
+        FindPath(root.right,curr,target,list,ans);
+        list.remove(list.size()-1);
     }
-
     public List<List<Integer>> pathSum(TreeNode root, int sum) {
+        List<List<Integer>> ans = new ArrayList<List<Integer>>();
         if(root != null){
-        List<Integer> list = new ArrayList<Integer>();
-        pathSum(root,sum,list);
+            List<Integer> list = new ArrayList();
+            int curr = 0;
+            FindPath(root,curr,sum,list,ans);
         }
         return ans;
     }
+
+    // public List<List<Integer>> pathSum2(TreeNode root, int sum) {
+    //     if(root != null){
+    //     List<Integer> list = new ArrayList<Integer>();
+    //     pathSum(root,sum,list);
+    //     }
+    //     return ans;
+    // }
 }
 
