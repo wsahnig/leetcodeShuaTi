@@ -36,7 +36,7 @@
  * }
  */
 class Solution {
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    public ListNode addTwoNumbers2(ListNode l1, ListNode l2) {
         ListNode r,l;
         r = new ListNode(0);
         l = r;    
@@ -54,6 +54,43 @@ class Solution {
                       
         } 
         return r;
+    }
+    public ListNode addTwoNumbers(ListNode a, ListNode b) {
+        ListNode ans = a,pre = null;
+        int tmp = 0;
+        while(a != null && b != null){
+            tmp = a.val + b.val + tmp;
+            a.val = tmp % 10;
+            tmp /= 10;
+            pre = a;
+            a = a.next;
+            b = b.next;
+        }
+        if(a != null){
+        
+            while(tmp != 0 && a != null){
+                tmp += a.val ;
+                a.val = tmp % 10;
+                tmp /= 10;
+                pre = a;
+                a = a.next;
+            }
+        }
+        if(b != null){
+            pre.next = b;
+            while(tmp != 0 && b != null){
+                tmp += b.val;
+                b.val = tmp % 10;
+                tmp /= 10;
+                pre = b;
+                b = b.next;
+            }
+        }
+        if(tmp != 0){
+            ListNode end = new ListNode(1);
+            pre.next = end;
+        }
+        return ans; 
     }
 }
 
