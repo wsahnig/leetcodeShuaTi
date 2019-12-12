@@ -88,5 +88,28 @@ class Solution {
         
         return true;
     }
+   
+    public boolean isValidBST2(TreeNode root) {
+        
+      if(root == null) return true;
+        
+      TreeNode p = root;
+      Stack<TreeNode> st = new Stack();
+      //root.val-1 可能越界
+      double pre = -Double.MAX_VALUE;
+      while(p != null || !st.isEmpty()){
+          while(p != null){
+              st.push(p);
+              p = p.left;
+          }
+          p = st.pop();
+          if(p.val <= pre) return false;
+          else{
+              pre = p.val;
+          }
+          p = p.right;
+      }
+      return true;
+    }
 }
 
