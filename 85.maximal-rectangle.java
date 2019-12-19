@@ -12,6 +12,7 @@ class Solution {
        }
        int n = matrix.length;
        int m = matrix[0].length;
+       //dp[i][j]表示纵向到这个点的1序列最大长度
        int[][] dp = new int[n][m];
        int maxArea = 0;
        
