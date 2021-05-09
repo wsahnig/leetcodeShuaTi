@@ -47,6 +47,32 @@ public class NestedIterator implements Iterator<Integer> {
         }
         return false;
     }
+    // private Queue<Integer> flattenedList;
+
+    // public NestedIterator(List<NestedInteger> nestedList) {
+    //     flattenedList = new LinkedList<>();
+    //     constructList(nestedList);
+    // }
+
+    // private void constructList(List<NestedInteger> nestedList) {
+    //     for (NestedInteger nestedInteger : nestedList) {
+    //         if (nestedInteger.isInteger()) {
+    //             flattenedList.add(nestedInteger.getInteger());
+    //         } else {
+    //             constructList(nestedInteger.getList());
+    //         }
+    //     }
+    // }
+
+    // @Override
+    // public Integer next() {
+    //     return flattenedList.poll();
+    // }
+
+    // @Override
+    // public boolean hasNext() {
+    //     return !flattenedList.isEmpty();
+    // }
 }
 
 /**
