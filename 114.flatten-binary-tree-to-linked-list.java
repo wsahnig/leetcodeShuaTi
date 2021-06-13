@@ -1,7 +1,5 @@
 import java.util.Stack;
 
-import javax.swing.tree.TreeNode;
-
 /*
  * @lc app=leetcode id=114 lang=java
  *
@@ -54,7 +52,7 @@ import javax.swing.tree.TreeNode;
  * }
  */
 class Solution {
-    public void flatten(TreeNode root) {
+    public void flatten2(TreeNode root) {
         TreeNode p = root;
         Stack<TreeNode> st = new Stack();
         
@@ -76,5 +74,22 @@ class Solution {
                                
         } 
     }
+    public void flatten(TreeNode root) {
+        while(root != null)
+        {
+            if(root.left != null)
+            {
+                TreeNode prev = root.left;
+                while(prev.right != null)
+                {
+                    prev = prev.right;
+                }
+                prev.right = root.right;
+                root.right = root.left;
+                root.left = null;
+            }
+            root = root.right;
+        }
+     }
 }
 
