@@ -50,8 +50,40 @@
  * 
  */
 class Solution {
+    // 2*numRows-2
+    // 
     public String convert(String s, int numRows) {
+        StringBuilder sb = new StringBuilder();
+        int len = s.length();
         
+        if(numRows == 1 || numRows == len) return s;
+        
+        int step = 0;
+        int maxStep = 2*(numRows-1);
+            
+        for(int i=0; i<numRows; i++){
+            int j = i;
+            if(i == 0 || i == numRows-1)
+            {
+                step = maxStep;
+                while(j < len)
+                {
+                    sb.append(s.charAt(j));
+                    j += step;
+                }
+            }
+            else
+            {
+                step = maxStep-2*i;
+                while(j < len)
+                {
+                    sb.append(s.charAt(j));
+                    j += step;
+                    step = maxStep-step;
+                }
+            }
+        }
+        return sb.toString();
     }
 }
 
