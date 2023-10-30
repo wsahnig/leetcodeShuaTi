@@ -6,7 +6,7 @@
 class Solution {
     public int hIndex(int[] citations) {
         int left = 0, right = citations.length - 1;
-        //最小的索引left使得len - left >= citations[i]
+        //最小的索引left使得len - left <= citations[i]
         while(left <= right) {
             int mid = (left + right) / 2;
             int cnt = citations.length - mid;
