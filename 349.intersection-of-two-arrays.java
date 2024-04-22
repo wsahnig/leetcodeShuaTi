@@ -7,17 +7,17 @@ import java.util.HashSet;
  */
 class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
-        ArrayList<Integer> list =new ArrayList();
-        for(Integer i : nums2) list.add(i);
-        HashSet<Integer> set = new HashSet();
+        Set<Integer> hs1 =new HashSet();
+        for(Integer i : nums2) hs1.add(i);
+        HashSet<Integer> hs2 = new HashSet();
         for(int i=0;i < nums1.length;i++){
-            if(list.contains(nums1[i]))
-               set.add(nums1[i]); 
+            if(hs1.contains(nums1[i]))
+               hs2.add(nums1[i]); 
         }
-        int[] ans = new int[set.size()];
+        int[] ans = new int[hs2.size()];
         int i = 0;
-        for(Integer num : set) ans[i++] = num;
-        return ans; 
+        for(Integer num : hs2) ans[i++] = num;
+        return ans;
     }
 }
 
